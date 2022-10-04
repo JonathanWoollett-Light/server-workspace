@@ -1,0 +1,23 @@
+{
+    "background_color": "white",
+    "description": "A website for testing yew.",
+    "display": "standalone",
+    "icons": [{
+        "src": "logo.svg",
+        "type": "image/svg+xml",
+        "sizes": "any",
+        "purpose": "any maskable"
+    },
+    {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+    }],
+    "lang": "en-GB",
+    "name": "Yew test site",
+    "short_name": "Yew Site",
+    "start_url": ".",
+    
+    "theme_color": "rgb(38, 38, 87)"
+}

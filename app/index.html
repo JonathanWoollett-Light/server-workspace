@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <meta name="theme-color" content="rgb(38, 38, 87)"/>
+    <meta name="description" content="A website to test yew."/>
+    
+    <title>Yew App</title>
+
+    <link data-trunk rel="copy-file" href="translation-example.jpg">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Manifest -->
+    <link data-trunk rel="copy-file" href="manifest.json">
+    <link data-trunk rel="copy-file" href="logo-512.png">
+    <link data-trunk rel="copy-file" href="logo.svg">
+    <link data-trunk rel="copy-file" href="service_worker.js">
+    <link rel="manifest" href="./manifest.json">
+
+    <link data-trunk rel="copy-file" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <script>
+        // register ServiceWorker
+        window.onload = () => {
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                        .register('./service_worker.js');
+            }
+        }
+    </script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+</html>
